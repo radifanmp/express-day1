@@ -1,0 +1,23 @@
+
+{{> headers}}
+{{> navbar}}
+
+<div class="container text-center pt-5">
+    <form action="#">
+        <div class="file-input-group text-start">
+            <input type="file" hidden placeholder="File Browser Example" id="file">
+            <label for="file">Attache Thumbnail <img src="/public/image/attache.png" alt="" ></label>
+        </div>
+        <div>
+            <input type="text" placeholder="Title">
+        </div>
+        <div>
+            <textarea placeholder="Article Content"></textarea>
+        </div>
+        <div class="text-end">
+            <button type="submit" class="btn-submit-article">Submit</button>
+        </div>
+    </form>
+</div>
+
+{{>footer}}

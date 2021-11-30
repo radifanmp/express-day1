@@ -1,0 +1,68 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="/">{{title}}</a>
+
+        <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse"
+        data-bs-target = "#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button> 
+
+            {{#if isLogin}}
+                <div class="dropdown">
+                <a
+                    class="dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                <img
+                    src="/public/image/avatar-default.png"
+                    alt=""
+                    class="img-avatar"
+                >
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end mt-3" aria-labelledby="dropdownMenuLink">
+                    <li class="mb-2">
+                        <a class="dropdonw-item d-flex align-items-center" href="/article-add">
+                            <img src="/public/image/knowledge.svg" alt="logo" />
+                            <span class="ms-2">Add Artcle</span>
+                        </a>
+                    </li>
+                        <li><hr class="dropdown-divider"></li>
+                    <li class="mb-2">
+                        <a class="dropdonw-item d-flex align-items-center" href="/logout">
+                            <img src="/public/image/logout.svg" alt="logo" />
+                            <span class="ms-2">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            {{else}}
+                {{#if (isAuth auth)}}
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <div class="nav-item">
+                                <li>
+                                    <a class="btn-login" href="login">Login</a>
+                                </li>
+                            </div>
+                            <div class="nav-item">
+                                <li>
+                                    <a class="btn-register" href="register">Register</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                {{/if}}
+            {{/if}}
+    </div>
+</nav>

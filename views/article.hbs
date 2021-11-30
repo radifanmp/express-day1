@@ -1,0 +1,28 @@
+
+{{> headers}}
+{{> navbar}}
+
+<div class="container article">
+    <div class="px-5">
+            {{!-- Conditional if user Login Show Button Edit & Delete --}}
+            {{#if isLogin}}
+                <div class="text-end mb-2">
+                    <a href="#" ><img src="/public/image/Edit.png"></a>
+                    <a href="#" ><img src="/public/image/Delete.png"></a>
+                </div>
+            {{/if}}
+        <img src="#" class="img-main">
+
+        <h4 class="mt-4">Wisata Vaksin Sambil Lihat Air Terjun Niagara, Harga Mulai Rp 38 Juta</h4>
+
+        <p>Amerika Timur menjadi destinasi selanjutnya untuk wisata vaksin. Agen travel AntaVaya menawarkan paket wisata vaksin ke sana dengan harga mulai Rp 38 juta.
+
+        Paket perjalanan wisata vaksin ke Amerika Serikat ini akan dilakukan selama 12 hari 8 malam. Dengan harga Rp 38,8 juta, traveler akan mendapatkan vaksin, tiket pesawat pulang dan pergi kelas ekonomi menggunakan maskapai Qatar Airlines.
+
+        Tak hanya itu, traveler juga akan menginap di hotel bintang 3,5 dan mendapatkan makan sebanyak 3 kali sehari. Adapun untuk objek wisata yang bakal dikunjungi adalah New York, New Jersey, Philadelphia, Washington D.C, Air Terjun Niagara, Albany, Boston, hingga Woodbury.
+
+        AntaVaya juga melayani pembuatan visa AS bagi traveler yang belum punya. Biayanya adalah Rp 2,7 juta ditambah dengan PPn 1%.</p>
+    </div>
+</div>
+
+{{>footer}}
